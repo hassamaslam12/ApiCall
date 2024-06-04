@@ -14,15 +14,54 @@ const Apicall = () => {
         .catch(err => console.error(err))
     }
 
+
+    const postApiData = ()=>{
+      axios.post(`https://jsonplaceholder.typicode.com/todos`,{
+        userId:1,
+        title:`new Title`,
+        completed:true
+      }).then(res=>{
+        console.log(res.data);
+        
+      }).catch(err=>{
+        console.log(err);
+        
+      })
+    }
+    const putApiData = ()=>{
+      axios.put(`https://jsonplaceholder.typicode.com/todos/1`,{
+        userId:1,
+        title:`New Title`,
+        completed:false
+      }).then(res=>{
+        console.log(res.data);
+        
+      }).catch(err=>{
+        console.log(err);
+        
+      })
+    }
+
+    const deleteApiData = ()=>{
+      axios.delete(`https://jsonplaceholder.typicode.com/todos/1`)
+      .then(res=>{console.log(res.data);
+      }).catch(err=>{
+
+        console.log(err);
+        
+      })
+    }
+
+
     return (
     <>
       <Box>
         <h1>Api handling</h1>
 
         <Button sx={{margin:1,textTransform:"capitalize"}} onClick={getApiData} variant="contained">Get Data</Button>
-        <Button sx={{margin:1,textTransform:"capitalize"}}  variant="contained">post Data</Button>
-        <Button sx={{margin:1,textTransform:"capitalize"}}  variant="contained">put Data</Button>
-        <Button sx={{margin:1,textTransform:"capitalize"}}  variant="contained">delete Data</Button>
+        <Button onClick={postApiData} sx={{margin:1,textTransform:"capitalize"}}  variant="contained">post Data</Button>
+        <Button onClick={putApiData} sx={{margin:1,textTransform:"capitalize"}}  variant="contained">put Data</Button>
+        <Button onClick={deleteApiData} sx={{margin:1,textTransform:"capitalize"}}  variant="contained">delete Data</Button>
       </Box>
 
         {userData[0] && <Table dataList={userData} 

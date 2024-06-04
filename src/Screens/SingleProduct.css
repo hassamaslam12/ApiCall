@@ -1,0 +1,19 @@
+.SP{
+    display: flex;
+    gap: 30px;
+    background-color: #fff;
+}
+
+.spGray{
+    padding: 30px;
+    background-color:#EFF0F5;
+
+}
+
+.spPrice{
+    color: #FAAF00;
+}
+
+.spButton{
+    margin-bottom: 10px;
+}

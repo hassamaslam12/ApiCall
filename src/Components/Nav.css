@@ -1,0 +1,21 @@
+.nav ul{
+    list-style-type: none;
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav{
+    background-color: #F85606;
+    display: flex;
+}
+
+.nav li{
+    color: aliceblue !important;
+
+
+}
+
+.nav li:hover{
+     text-decoration: underline;
+}
