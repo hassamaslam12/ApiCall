@@ -1,0 +1,18 @@
+[debug] [2024-06-04T16:23:23.927Z] ----------------------------------------------------------------------
+[debug] [2024-06-04T16:23:23.933Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-06-04T16:23:23.934Z] CLI Version:   12.6.1
+[debug] [2024-06-04T16:23:23.934Z] Platform:      win32
+[debug] [2024-06-04T16:23:23.935Z] Node Version:  v18.16.0
+[debug] [2024-06-04T16:23:23.937Z] Time:          Tue Jun 04 2024 21:23:23 GMT+0500 (Pakistan Standard Time)
+[debug] [2024-06-04T16:23:23.938Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-04T16:23:24.110Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-04T16:23:24.112Z] > authorizing via signed-in user (hassammemon124@gmail.com)
+[debug] [2024-06-04T16:23:24.112Z] [iam] checking project apicall-8f1e2 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-06-04T16:23:24.117Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/apicall-8f1e2:testIamPermissions [none]
+[debug] [2024-06-04T16:23:24.118Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/apicall-8f1e2:testIamPermissions x-goog-quota-user=projects/apicall-8f1e2
+[debug] [2024-06-04T16:23:24.118Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/apicall-8f1e2:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-06-04T16:23:24.821Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/apicall-8f1e2:testIamPermissions 200
+[debug] [2024-06-04T16:23:24.822Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/apicall-8f1e2:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-06-04T16:23:24.826Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/apicall-8f1e2 [none]
+[debug] [2024-06-04T16:23:25.524Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/apicall-8f1e2 200
