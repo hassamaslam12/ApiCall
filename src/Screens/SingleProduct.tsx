@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom';
 import "./SingleProduct.css"
 import { Button, Rating, Typography } from '@mui/material';
+import '../Components/Nav.css'
 
 const SingleProduct = () => {
     const [data,setData] = useState<any>({})
